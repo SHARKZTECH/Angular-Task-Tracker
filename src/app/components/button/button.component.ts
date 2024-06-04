@@ -16,4 +16,9 @@ export class ButtonComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
+
+  onClick(){
+    alert("Add")
+  }
+
 }
