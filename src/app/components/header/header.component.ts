@@ -12,4 +12,9 @@ export class HeaderComponent {
   title = 'Task Tracker';
 
 
+  toggleAddTask(){
+    alert("Add")
+  }
+
+
 }

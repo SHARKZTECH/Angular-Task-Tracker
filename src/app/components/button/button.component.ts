@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component,Input, OnInit } from '@angular/core';
+import { Component,EventEmitter,Input, OnInit ,Output} from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -11,6 +11,7 @@ import { Component,Input, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() text:string="";
   @Input() color:string="";
+  @Output() btnClick=new EventEmitter();
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
@@ -18,7 +19,7 @@ export class ButtonComponent implements OnInit {
 
 
   onClick(){
-    alert("Add")
+    this.btnClick.emit();
   }
 
 }
