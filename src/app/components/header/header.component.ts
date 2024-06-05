@@ -12,7 +12,7 @@ import { UiService } from '../../services/ui.service';
 })
 export class HeaderComponent {
   title = 'Task Tracker';
-  showAddTask:boolean=false;
+  showAddTask:boolean=true;
   subscription:Subscription;
 
   constructor(private uiService:UiService){
